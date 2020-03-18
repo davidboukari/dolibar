@@ -100,7 +100,11 @@ To install just go to the url:
 
 * https://gestion.mydomain.com/index.php
 
-## fail2ban
+## Security
+
+* https://wiki.dolibarr.org/index.php/Informations_s%C3%A9curit%C3%A9
+
+### fail2ban
 
 #2020-03-16 09:05:07 DEBUG   37.170.193.24   Bad password, connexion refused
 #failregex = DEBUG <HOST>.*Authentification ko (user|bad password)
