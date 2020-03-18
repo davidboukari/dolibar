@@ -123,5 +123,5 @@ findtime = 600
 To test:
 
 ```bash
-fail2ban-regex /var/www/html/gestion.mydomain.com/documents/dolibarr.log /etc/fail2ban/filter.d/dolibarr.conf
+fail2ban-regex --print-all-matched /var/www/html/gestion.mydomain.com/documents/dolibarr.log /etc/fail2ban/filter.d/dolibarr.conf
 ```
