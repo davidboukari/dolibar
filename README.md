@@ -96,7 +96,9 @@ chown microlinux:apache htdocs/conf/conf.php
 chmod 0660 htdocs/conf/conf.php
 ```
 
-To install just go to the url/index.php
+To install just go to the url:
+
+* https://gestion.mydomain.com/index.php
 
 ## fail2ban
 
@@ -116,4 +118,10 @@ port="http,https"
 logpath  = /var/www/html/gestion.mydomain.com/documents/dolibarr.log
 maxretry = 3
 findtime = 600
+```
+
+To test:
+
+```bash
+fail2ban-regex /var/www/html/gestion.mydomain.com/documents/dolibarr.log /etc/fail2ban/filter.d/dolibarr.conf
 ```
