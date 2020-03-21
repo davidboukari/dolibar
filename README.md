@@ -111,7 +111,7 @@ To install just go to the url:
 before = common.conf
 
 [Definition]
-#2020-03-21 07:00:22 DEBUG   37.166.184.140  Bad password, connexion refused
+#2020-03-21 07:00:22 DEBUG   137.1.185.14  Bad password, connexion refused
 failregex= ^.* <HOST> .*Authentication KO.*$
 #datepattern = ^%%Y-%%m-%%d %%H:%%M:%%S
 ignoreregex =
