@@ -106,11 +106,15 @@ To install just go to the url:
 
 ### fail2ban
 
-#2020-03-16 09:05:07 DEBUG   37.170.193.24   Bad password, connexion refused
-#failregex = DEBUG <HOST>.*Authentification ko (user|bad password)
 ```
+[INCLUDES]
+before = common.conf
+
 [Definition]
-failregex=^.*DEBUG.*<HOST>.*Bad password.*
+#2020-03-21 07:00:22 DEBUG   37.166.184.140  Bad password, connexion refused
+failregex= ^.* <HOST> .*Authentication KO.*$
+#datepattern = ^%%Y-%%m-%%d %%H:%%M:%%S
+ignoreregex =
 ```
 
 ```bash
@@ -121,7 +125,8 @@ filter   = dolibarr
 port="http,https"
 logpath  = /var/www/html/gestion.mydomain.com/documents/dolibarr.log
 maxretry = 3
-findtime = 600
+#findtime = 600
+findtime = 32000000
 ```
 
 To test:
